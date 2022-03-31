@@ -11,13 +11,13 @@ H::H(double h) {
 }
 Point3Dh::Point3Dh(int x, int y, int z, double h):Point2D(x,y),Z(z),H(h) {
 	number = 0;
-	if (this->h == 0) {
+	if (h == 0) {
 		number = 1;
 	}
 }
 void Point3Dh::real() {
 	if (number == 0) {
-		cout<< "(" << this->x / this->h << ", " << this->y / this->h << ", " << this->z / this->h << ")" << endl;
+		cout<< "(" << x / h << ", " << y / h << ", " << z / h << ")" << endl;
 	}
 	else {
 		cout << "4 координата не должна равняться 0!" << endl;
